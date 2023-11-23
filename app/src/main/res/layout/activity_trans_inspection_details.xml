@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".TransInspectionDetails">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/orange">
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_back">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/go_back"
+            android:fontFamily="@font/zonapro_regular"
+            android:gravity="center"
+            android:text="Transmission Details"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header"
+        android:layout_above="@+id/tv_save_next"
+        android:layout_marginTop="10dp">
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_trans_questions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_save_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:backgroundTint="@color/orange"
+        android:background="@drawable/cardview_dealership"
+        android:fontFamily="@font/zonapro_semibold"
+        android:gravity="center"
+        android:text="SAVE &amp; NEXT"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        >
+    </TextView>
+</RelativeLayout>

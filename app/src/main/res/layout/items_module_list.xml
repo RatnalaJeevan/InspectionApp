@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+
+        android:id="@+id/play_audio"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/speaker_orange">
+
+    </ImageView>
+    <RelativeLayout
+        android:id="@+id/rl_modules"
+        android:layout_width="match_parent"
+        android:layout_toRightOf="@+id/play_audio"
+        android:layout_height="60dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/tv_module_images"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/iv1"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:gravity="start"
+            android:text="Exterior Vehicle Images"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:fontFamily="@font/zonapro_bold"
+            >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/iv1"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/right_arrow_black">
+
+        </ImageView>
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/check_service_completed">
+
+        </ImageView>
+    </RelativeLayout>
+    <View
+        android:id="@+id/view1"
+        android:layout_below="@+id/rl_modules"
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@color/lightorange">
+    </View>
+</RelativeLayout>

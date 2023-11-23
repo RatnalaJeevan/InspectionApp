@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_language"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        >
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/selected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/tick_orange">
+
+        </ImageView>
+        <ImageView
+
+            android:id="@+id/unselected"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/grey_tick">
+
+        </ImageView>
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/iv_kannada"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:layout_alignParentLeft="true"
+            android:text="ಕ">
+
+        </TextView>
+        <TextView
+            android:id="@+id/tv_language_name"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/iv_kannada"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/zonapro_bold"
+            android:text="ಕನ್ನಡ"
+            android:textColor="@color/text_profile"
+            android:textSize="18dp">
+
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

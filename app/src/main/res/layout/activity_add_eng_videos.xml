@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddEngineVideos">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/orange">
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_back">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/go_back"
+            android:fontFamily="@font/zonapro_regular"
+            android:gravity="center"
+            android:text="Add Engine Videos"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+    </RelativeLayout>
+    <!--<androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">-->
+
+    <RelativeLayout
+        android:id="@+id/rl_eng_videos"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl_header"
+        android:layout_above="@+id/tv_save_next"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/title1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/zonapro_semibold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Engine Videos"
+            android:textSize="16dp">
+
+        </TextView>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_view_more_eng"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/add_black">
+
+        </ImageView>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_view_less_eng"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/minus_black">
+
+        </ImageView>
+
+        <RelativeLayout
+
+            android:id="@+id/rl_eng_videos_list"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/title1">
+            <androidx.recyclerview.widget.RecyclerView
+
+                android:id="@+id/rv_car_eng_video"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.recyclerview.widget.RecyclerView>
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_trans_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_eng_videos"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/zonapro_semibold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Transmission Videos"
+            android:textSize="16dp">
+
+        </TextView>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_view_more_trans"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/add_black">
+
+        </ImageView>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_view_less_trans"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/minus_black">
+
+        </ImageView>
+        <RelativeLayout
+
+            android:id="@+id/rl_trans_video_list"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/title2">
+            <GridView
+                android:numColumns="2"
+                android:id="@+id/rv_car_trans_videlist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </GridView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rl_exhaust_videos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_trans_videos"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:padding="10dp"
+        android:layout_marginRight="5dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/title3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/zonapro_semibold"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:text="Exhaust Videos"
+            android:textSize="16dp">
+
+        </TextView>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_view_more_photos"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/add_black">
+
+        </ImageView>
+        <ImageView
+            android:visibility="gone"
+            android:id="@+id/iv_view_lessphotos"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/minus_black">
+
+        </ImageView>
+        <RelativeLayout
+
+            android:id="@+id/rl_videos_list"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/title3">
+            <GridView
+                android:numColumns="2"
+                android:id="@+id/rv_car_imagelist"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </GridView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_save_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:backgroundTint="@color/orange"
+        android:background="@drawable/cardview_dealership"
+        android:fontFamily="@font/zonapro_semibold"
+        android:gravity="center"
+        android:text="SAVE &amp; NEXT"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        >
+    </TextView>
+      <!--  </RelativeLayout>
+    </androidx.core.widget.NestedScrollView>-->
+</RelativeLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rl_veh_images"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginTop="5dp"
+        android:padding="5dp"
+        android:background="@drawable/cardview_lightorange_margined">
+        <ImageView
+            android:id="@+id/car_image_position"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="4dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/add_copy">
+
+        </ImageView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/car_position_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/rl_veh_images"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/zonapro_regular"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+        android:text="Engine"
+        >
+
+    </TextView>
+    <ImageView
+        android:id="@+id/audio"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="10dp"
+        android:layout_below="@+id/rl_veh_images"
+        android:layout_toRightOf="@+id/car_position_name"
+        android:src="@drawable/speaker_orange">
+
+    </ImageView>
+</RelativeLayout>

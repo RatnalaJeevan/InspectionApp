@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="15dp">
+        <ImageView
+            android:id="@+id/iv_dealerlogo"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/icon_noimage">
+
+        </ImageView>
+
+        <TextView
+            android:id="@+id/dealername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/iv_dealerlogo"
+            android:text="Sagar Cars"
+            android:textColor="@color/black"
+            android:fontFamily="@font/zonapro_semibold"
+            android:textSize="16dp"
+            >
+
+        </TextView>
+        <TextView
+            android:id="@+id/dealerno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/dealername"
+            android:layout_toRightOf="@+id/iv_dealerlogo"
+            android:text="90000000"
+            android:textColor="@color/black"
+            android:fontFamily="@font/zonapro_semibold"
+            android:textSize="16dp"
+            >
+
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

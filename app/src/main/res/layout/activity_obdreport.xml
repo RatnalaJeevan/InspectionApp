@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OBDReport">
+    <RelativeLayout
+        android:id="@+id/rl_header"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:padding="10dp"
+        android:background="@color/orange">
+        <ImageView
+            android:id="@+id/go_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/arrow_back">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/text_heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/go_back"
+            android:fontFamily="@font/zonapro_regular"
+            android:gravity="center"
+            android:text="Add OBD Report"
+            android:textColor="@color/white"
+            android:textSize="20dp">
+
+        </TextView>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/label1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rl_header"
+        android:fontFamily="@font/zonapro_regular"
+        android:gravity="center"
+        android:text="OBD Report link :"
+        android:textColor="@color/black"
+        android:textSize="16dp">
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/rl_obdlink"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/label1"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/cardview_lightorange_margined">
+
+        <EditText
+            android:id="@+id/entered_obdlink"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:maxLines="1"
+            android:layout_margin="6dp"
+            android:fontFamily="@font/zonapro_regular"
+            android:gravity="start"
+            android:background="@null"
+            android:hint=""
+            android:textColorHint="@color/lightgrey"
+            android:textColor="@color/black"
+            android:textSize="18dp">
+        </EditText>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/label2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/rl_obdlink"
+        android:fontFamily="@font/zonapro_regular"
+        android:gravity="center"
+        android:text="OBD Report PDF:"
+        android:textColor="@color/black"
+        android:textSize="16dp">
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/rl_obdpdf"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/label2"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/cardview_lightorange_margined">
+        <RelativeLayout
+            android:id="@+id/rl_1st_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="10dp"
+            android:layout_marginTop="5dp"
+            >
+            <ImageView
+                android:id="@+id/iv_obd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/add_copy">
+
+            </ImageView>
+            <TextView
+                android:id="@+id/tv_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text=".pdf"
+                android:visibility="gone"
+                android:gravity="center"
+                android:fontFamily="@font/zonapro_bold"
+                android:textSize="14dp">
+
+
+            </TextView>
+        </RelativeLayout>
+    </RelativeLayout>
+    <TextView
+        android:id="@+id/tv_save_next"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:padding="10dp"
+        android:backgroundTint="@color/orange"
+        android:background="@drawable/cardview_dealership"
+        android:fontFamily="@font/zonapro_semibold"
+        android:gravity="center"
+        android:text="SAVE &amp; NEXT"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        >
+    </TextView>
+</RelativeLayout>
